@@ -1,0 +1,38 @@
+*{
+	margin: 0;
+}
+
+body{
+	font-family: paralucent, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 23px;
+}
+
+h2{
+	font-weight: 700;
+	margin-top: 2em;
+	margin-bottom: 1em;
+/*	background: yellow;*/
+}
+
+h1, h2{
+	letter-spacing: .7px;
+}
+
+article{
+	padding-left: 4em;
+}
+
+p{
+	margin-bottom: 1em;
+	width: 60%;
+}
+
+.introduction{
+	width: 80%;
+	font-size: 3em;
+	line-height: 1;
+	    text-indent: -.4em;
+}
