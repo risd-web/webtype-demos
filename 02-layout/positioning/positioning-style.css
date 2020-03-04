@@ -3,9 +3,14 @@ body{
 	height: 100vh;
 }
 
+.intro{
+	height: 100vh;
+	background: yellow;
+}
 .container{
 	display: flex;
 	column-gap: 10px;
+	position: relative;
 }
 
 .box{
@@ -15,7 +20,7 @@ body{
 	color: white;
 	font-size: 3em;
 }
-/*
+
 .rel{
 	position: relative;
 	top: 100px;
@@ -40,10 +45,4 @@ body{
 	border-bottom-left-radius: 50%;
 }
 
-.circle{
-	 background: white;
-	 width: 200px;
-	 height: 200px;
-	 border-radius: 50%;
-}
-*/
+
