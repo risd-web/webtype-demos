@@ -1,38 +1,43 @@
-*{
-	margin: 0;
-}
+
+  /* The bare minimum English subset, plus copyright & arrows (← ↑ → ↓) & quotes (“ ” ‘ ’) & bullet (•) */
+ @font-face {
+   font-family: 'Recursive';
+   font-style: oblique -15deg 0deg;
+   font-weight: 300 1000;
+   font-display: swap;
+   src: url('/fonts/Recursive_VF_1.043--subset_range_english_basic.woff2') format('woff2');
+   unicode-range: U+0020-007F,U+00A9,U+2190-2193,U+2018,U+2019,U+201C,U+201D,U+2022;
+ }
+
+ /* unicode latin-1, punc/symbols & arrows (↔ ↕ ↖ ↗ ↘ ↙) */
+ @font-face {
+   font-family: 'Recursive';
+   font-style: oblique -15deg 0deg;
+   font-weight: 300 1000;
+   font-display: swap;
+   src: url('/fonts/Recursive_VF_1.043--subset_range_latin_1_punc.woff2') format('woff2');
+   unicode-range: U+00A0-00BF,U+2194-2199;
+ }
 
 body{
-	font-family: paralucent, sans-serif;
-	font-weight: 400;
-	font-style: normal;
-	font-size: 16px;
-	line-height: 23px;
+	font-family: 'Recursive', monospace;
+	display: flex;
+	align-items: center;
+	min-height: 100vh;
+}
+main{
+	font-size: 4vw;
+	text-align: center;
 }
 
-h2{
-	font-weight: 700;
-	margin-top: 2em;
-	margin-bottom: 1em;
-/*	background: yellow;*/
+#temp, #feels{
+	display: inline;
 }
 
-h1, h2{
-	letter-spacing: .7px;
+.highlight{
+	font-size: 18vw;
+	line-height: .9;
+	letter-spacing: -0.08em;
 }
 
-article{
-	padding-left: 4em;
-}
 
-p{
-	margin-bottom: 1em;
-	width: 60%;
-}
-
-.introduction{
-	width: 80%;
-	font-size: 3em;
-	line-height: 1;
-	    text-indent: -.4em;
-}
