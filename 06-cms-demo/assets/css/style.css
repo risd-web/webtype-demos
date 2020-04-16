@@ -1,0 +1,108 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+
+body{
+   font-family: 'Arial', sans-serif;
+}
+
+h1, h2, h3, p{
+   margin-bottom: 1em;
+}
+
+nav, main{
+   padding: 1em;
+}
+nav ul{
+   list-style-type: none;
+}
+
+nav ul li{
+   display: inline-block;
+   margin-left: 1em;
+}
+
+main{
+   max-width: 30em;
+   margin: auto;
+}
+
+main ul{
+   margin: 1em 0;
+   font-size: 1.5em;
+}
+
+main li{
+   margin: 1em 0;
+}
+
+a{
+   color: #fd00ff;
+}
+
+.category{
+   display: inline-block;
+   color: #666;
+   margin-left: .5em;
+   font-size: .7em;
+}
+
+/* INTERVIEW STYLES */
+.speaker{
+   font-weight: bold;
+}
+
+
+/* MOBILE MENU */
+.menu-icon{
+   display: none;
+}
+
+.line{
+   height: 1px;
+   width: 30px;
+   margin: 5px 0;
+   background: blue;
+}
+
+/*
+add responsiveness*/
+@media screen and (max-width: 600px){
+
+
+   /*display menu icon */
+   .menu-icon{
+      display: block;
+   }
+
+    /*hide menu items */
+   .menu{
+      display: none;
+   }
+
+    /*show menu items when has class active */
+   .menu.active{
+      display: block;
+   }
+
+   .menu.active li{
+       display: block;
+       margin: .5em 0;
+   }
+
+
+   /*remove flexbox to prevent column layout for narrower screens*/
+   .cols{
+      display: block;
+   }
+
+   /*adjust margins*/
+   .col{
+      margin-right: 0;
+      margin-bottom: 1em;
+   }
+
+}
