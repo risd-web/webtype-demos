@@ -1,0 +1,38 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+
+}
+
+.letter{
+    width: 300px;
+    background: lightgrey;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.segment {
+    width: 100px;
+    height: 100px;
+    margin: 0px;
+    background: black;
+}
+
+.segment.blank {
+    width: 100px;
+    height: 100px;
+    margin: 0px;
+    background: none;
+}
+
+.round{
+    border-radius: 50%;
+}
+
+.round:hover{
+    background: white;
+}
+
