@@ -1,0 +1,52 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: sans-serif;
+} 
+
+.container{
+ 	width: 500px;
+	margin: auto;
+}
+.item{
+	border-top: 2px solid blue;
+	padding: 2rem 0;
+}
+
+h1{
+	text-align: center;
+	margin: 1rem auto;
+}
+
+h3{
+	margin: .5rem 0;
+}
+
+a{
+	color: blue;
+}
+a:hover{
+	color: red;
+}
+
+.details{
+	line-height: 1.3;
+	color: blue;
+	display: none;
+/*	opacity: 0;*/
+	transition: opacity 300ms ease-in-out;
+}
+
+.item:hover .details{
+	/*	the space between item:hover .details 
+	signifies a parent-child relationship in the DOM*/
+	display: block;
+}
+
+/*.heading:hover + .details{
+	color: pink;
+	opacity: 1;
+}
+*/
