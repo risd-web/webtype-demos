@@ -1,0 +1,69 @@
+body{
+
+}
+
+.cup{
+    position: relative;
+    width: 400px;
+    height: 500px;
+    margin: auto;
+
+    animation: tilt 2s ease-in-out 1 forwards;
+}
+
+/*.cup:hover{
+    animation-play-state: running;
+}*/
+.square{
+    width: 300px;
+    height: 500px;
+    background: red;  
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+.handle{
+    width: 100px;
+    height: 300px;
+    background: transparent;
+    position: absolute;
+    bottom: 90px;
+    right: 25px;
+    border: 20px solid blue;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.circle{
+    position: absolute;
+    left: 0px;
+    width: 260px;
+    height: 260px;
+    background: yellow;
+    border: 15px dashed blue;
+    border-radius: 50%;
+    transform-origin: 50% 50%;
+    animation: roll 1s ease-in-out 2s 1 forwards;
+}
+
+
+@keyframes tilt{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(-90deg);
+    }
+}
+
+@keyframes roll{
+    0%{
+        transform: translateY(0) rotate(0deg);
+    }
+    100%{
+        transform: translateY(-500px) rotate(-360deg);
+    }
+}
