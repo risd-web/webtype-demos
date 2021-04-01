@@ -1,0 +1,49 @@
+*{
+	margin: 0;
+}
+
+/*load multiple formats as fallbacks*/
+
+@font-face {
+  font-family: 'Magmatic';
+  src: url('../fonts/magmatic-vf.woff2') format('woff2-variations'),
+  url('../fonts/magmatic-vf.woff') format('woff-variations'),
+  url('../fonts/magmatic-vf.ttf') format('truetype-variations');
+}
+
+body{
+	font-family: 'Magmatic', sans-serif;
+  	font-variation-settings: 'wght' 300,'wdth' 120, 'XHGT' 1;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+article{
+	margin: 1rem;
+}
+
+
+h1, h2{
+	font-weight: normal;
+	font-variation-settings: 'wght' 400,'wdth' 40, 'XHGT' 0;
+	font-size: 4rem;
+	line-height: 1.0;
+}
+
+article{
+	padding-left: 4em;
+}
+
+p{
+	margin-bottom: 1em;
+	width: 60%;
+}
+
+.introduction{
+	width: 80%;
+	font-size: 2.5rem;
+	font-variation-settings: 'wght' 200,'wdth' 80, 'XHGT' 0;
+	line-height: 1.2;
+	text-indent: -0.5em;
+}
