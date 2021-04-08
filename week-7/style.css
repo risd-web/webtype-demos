@@ -4,8 +4,6 @@
 	box-sizing: border-box;
 }
 
-/*load multiple formats as fallbacks*/
-
 @font-face {
   font-family: 'Magmatic';
   src: url('fonts/magmatic-vf.woff2') format('woff2-variations'),
@@ -34,17 +32,24 @@ section{
 	margin: 3rem 0;
 }
 
-#content{
-	width: 33em;
-	height: 500px;
-	margin: auto;
-}
 
 #intro{
 	font-size:30vw;
 	line-height: 0.9;
 	text-align: center;
 }
+
+#content{
+	width: 33em;
+	height: 500px;
+	margin: auto;
+}
+
+/*#content p{
+	transition: font-variation-settings 400ms ease-in-out;
+}*/
+
+/*SLIDER STYLES*/
 
 #sliders ul{
 	margin: auto;
@@ -69,10 +74,15 @@ input.axis-range{
 	margin: 0 20px;
 }
 
+
+/*BUTTON STYLES*/
+
 #buttons{
 	text-align: center;
 }
 button{
+	font-family: 'Magmatic', sans-serif;
+	font-variation-settings: 'wght' 300,'wdth' 100, 'XHGT' 0;
 	font-size: 1em;
 	background: white;
 	border-radius: 50%;
