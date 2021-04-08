@@ -39,6 +39,19 @@ $(document).ready(function(){
 	});
 
 
+	$('#random').click(function(event) {
+		let randomwidth = randomNumber(40,150);
+		let randomwght = randomNumber(100,900);
+		let randomxhgt = randomNumber(0,100);
+		
+		$("#content").css({
+			"--wdth": randomwidth,
+			"--wght": randomwght,
+			"--XHGT": randomxhgt,
+		});	
+	});
+
+
 	//mouseposition
 	$('#intro').mousemove(function(event) {
 		let cursorX = event.pageX / $(this).width();
@@ -56,3 +69,9 @@ $(document).ready(function(){
 		
 	});
 });
+
+
+// Function to generate random number 
+function randomNumber(min, max) { 
+    return Math.floor(Math.random() * (max - min) + min);
+}
