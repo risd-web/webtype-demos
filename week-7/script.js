@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+	console.log('script loaded');
+
 	const wghtmax = 900;
 	const wdthmax = 150;
 
@@ -7,7 +9,11 @@ $(document).ready(function(){
 	$('.axis-range').on('input', function(){
 
 		let value = parseInt($(this).val()); //get slider input value
-		const slidertype = $(this).data('slidertype'); //get slider axis
+		// console.log(value);
+
+		const slidertype = $(this).data('type'); //get slider axis
+
+		// console.log("--"+slidertype, value );
 
 		$('#bigletter').css("--"+slidertype, value);
 
@@ -15,8 +21,9 @@ $(document).ready(function(){
 
 	//click buttons
 	$('#default').click(function(event) {
+		// console.log('default clicked');
 		$("#content").css({
-			"--wdth":100,
+			"--wdth": 100,
 			"--wght": 400,
 			"--XHGT": 0
 		});	
@@ -54,6 +61,9 @@ $(document).ready(function(){
 
 	//mouseposition
 	$('#intro').mousemove(function(event) {
+
+		console.log(event.pageX, event.pageY);
+
 		let cursorX = event.pageX / $(this).width();
 		let cursorY = 1 - (event.pageY) / $(this).height();
 
@@ -75,3 +85,5 @@ $(document).ready(function(){
 function randomNumber(min, max) { 
     return Math.floor(Math.random() * (max - min) + min);
 }
+
+
