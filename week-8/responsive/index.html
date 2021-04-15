@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Responsive Design Tech Review</title>
+        <meta name="viewport" content="width=device-width">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="js/script.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <nav>
+            <div class="menu-icon">
+                <div class="line">
+                </div>
+                <div class="line">
+                </div>
+                <div class="line">
+                </div>
+            </div>
+            <ul class="menu">
+                <li>Title</li>
+                <li>Link</li>
+                <li>Link</li>
+                <li>Link</li>
+                <li>Link</li>
+            </ul>
+        </nav>
+        <main>
+            <div class="columns">
+                <div class="column">
+                    <h1>Gridniking </h1>
+                    <div class="author">Frank Chimero</div> 
+                    <time>February 5, 2020</time> | <a href="https://frankchimero.com/blog/2020/gridniking/">🔗</a>
+                </div>
+                <div class="column">
+                    <p>
+                        Making grids sits somewhere between sharpening axes and solving puzzles, part prep work, part game. Some designers are obsessed with grids, and I can understand the appeal. There are enough details that you can get lost in it, and what you produce becomes a tool, an investment. Dividing space is indeed one of the principle tasks of design, and grids offer a way to structure that work. All the same, designs placed on super intricate grid systems can feel a little…sterile? Micromanaged? Over-built? Those aren’t quite the right words, but I think you know what I mean. There is a point where a grid system becomes too elaborate and loses its finesse. The structures that are meant to support creative choices can become a cage.
+                    </p>
+                    <p>
+                        I’m a big proponent of “just enough grid.” Grids are scaffolding, structures meant to help get the main building done. There is no need to overbuild, especially for this site. I am going to stay organized, but only just so.
+                    </p>
+                    <p>
+                        Grids can also be used as a communicative device, because hierarchy can be expressed by ordering space. (Previously covered here.) This method is difficult on the web, though, because the canvas is, uh, squishy. It means that a carefully arranged layout on desktop devolves to a vertical stack o’ stuff on smaller viewports. If hierarchy is primarily expressed through layout, you lose it on mobile due to the reduced space. This is usually why you see designers relying more on font size, weight, and so on to express the importance of text. It’s also a strong argument to design these pages mobile-first, reason being that if the hierarchy holds up on mobile, it will adapt to larger viewports, no problemo.
+                    </p>
+                    <p>
+                        This approach is bulletproof, but only if I ignore my own experience. The designs I create mobile-first usually feel bland when I scale them up to desktop. There is a deficit of imagination. The layout feels like too little butter spread over too much bread. I find that if I start with a more expressive design for a large screen then simplify it down for smaller viewports, both become more interesting.
+                    </p>
+                    <p>
+                        I am also going to go against my own advice and use space to establish hierarchy. I can’t get around my personal preferences. I love shallow hierarchies with relatively few type sizes. When done right, I think its tone walks the fine line of “the presentation of this information has been carefully crafted” and “I couldn’t be bothered to pick more than one font size, man.” How many ways are there to look both meticulous and aloof? I’m willing to wrestle with this for a bit to send those mixed signals.
+                    </p>
+                    <p>
+                        I’ll start with a standard 12-column grid on this site, with intentions to subdivide the page into 4 and 6 columns on desktop. (Twelve columns not because I intend to use all of them, but because 12 can easily be spanned into 1, 2, 3, 4, and 6 columns.) The design will also be a good chance to play with CSS grid, something I’ve used for simplistic things like subdividing sections into two columns, but never for more robust page layout stuff. It will be fun to mess around with it.
+                    </p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <span class="footer-text">This is a</span> demo page<span class="footer-text"> for responsive design structures</span>
+        </footer>
+    </body>	
+</html>

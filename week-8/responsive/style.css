@@ -1,0 +1,170 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+
+body{
+   font-family: 'Arial', sans-serif;
+}
+a {
+   color: blue;
+   text-decoration: none;
+}
+a:hover{
+   border-bottom: 1px solid blue;
+}
+p{
+   margin-bottom: 1em;
+}
+
+nav, main, footer{
+   padding: 1em;
+}
+nav ul{
+   list-style-type: none;
+   display: flex;
+}
+
+nav ul li{
+  /* display: inline-block;*/
+   margin-right: .5em;
+}
+
+nav ul li:after{
+   content : " |";
+}
+
+nav ul li:last-child:after{
+  content : "";
+}
+
+main{
+
+}
+
+h1{
+   font-size: 4.5em;
+   line-height: .9;
+   letter-spacing: -0.5px;
+   font-weight: normal;
+   text-indent: -0.1em;
+   margin-bottom: .25em;
+}
+
+.columns{
+   display: flex;
+   height: 80vh;
+}
+
+.column{
+/*   border: 1px solid blue;*/
+   flex: 1;
+   padding: 1em;
+   margin-right: .5em;
+   overflow: auto;
+}
+
+.column:first-child{
+   border-right: 1px dotted blue;
+}
+.column:last-child{
+    margin-right: 0;
+}
+
+.menu-icon{
+   display: none;
+}
+
+.line{
+   height: 1px;
+   width: 30px;
+   margin: 5px 0;
+   background: blue;
+}
+/*
+add responsiveness*/
+@media screen and (max-width: 850px){
+   .columns{
+      display: block;
+      height: auto;
+   }
+
+   .column{
+      padding: 0;
+   }
+   .column:first-child{
+      border-right: 0;
+      padding-bottom: 1em;
+      margin-bottom: 1em;
+      border-bottom: 1px dotted blue;
+   }
+
+   h1{
+      text-indent: 0;
+     /* color: green;*/
+   }
+
+   /*display menu icon */
+   .menu-icon{
+      display: block;
+   }
+
+    /*hide menu items */
+   .menu{
+      display: none;
+   }
+
+    /*show menu items when has class active */
+   .menu.active{
+      display: flex;
+   }
+
+/*   .menu.active li:first-child{
+      margin-top: 1em;
+   }
+   .menu.active li{
+       display: block;
+       margin: .5em 0;
+   }
+*/
+
+}
+
+@media screen and (max-width: 400px){
+   .footer-text{
+      display: none;
+   }
+}
+
+@media print {
+   .columns{
+      display: block;
+      height: auto;
+   }
+
+   .column{
+      padding: 0;
+   }
+   .column:first-child{
+      border-right: 0;
+      padding-bottom: 1em;
+      margin-bottom: 1em;
+      border-bottom: 1px dotted blue;
+   }
+   .column:nth-child(2n){
+      columns: 2;
+   }
+
+   h1{
+      text-indent: 0;
+   }
+
+   nav{
+      display: none;
+   }
+
+}
+
+
