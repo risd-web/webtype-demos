@@ -1,0 +1,53 @@
+/**{
+	border: 1px solid;
+}*/
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-size: 20px;
+	font-family: gimlet-text, serif;
+	font-weight: 500;
+	font-style: normal;
+}
+
+h1{
+	color: rgb(0 0 255);
+	border: 6px solid;
+	padding: 20px;
+/*	font-family: gimlet-text, serif;*/
+	font-weight: 800;
+	font-style: normal;
+}
+
+h2, h3, h4{
+	font-weight: 800;
+	font-style: normal;
+}
+/*h2{
+	margin-top: 2em;
+}*/
+
+p{
+	color: red;
+	margin-bottom: 1em;
+}
+
+/*----
+EVENTS
+----*/
+
+.event{
+	border: 3px dotted;
+	width: 300px;
+	padding: 30px;
+	margin: 20px;
+	display: inline-block;
+}
+
+.event-description{
+	color: green;
+}
+
