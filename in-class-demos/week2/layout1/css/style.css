@@ -1,0 +1,4 @@
+article{
+	max-width: 40em; /*restrict to 40chars per line*/
+	margin: auto;
+}

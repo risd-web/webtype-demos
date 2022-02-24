@@ -1,0 +1,14 @@
+article{
+	width: 80%;
+	margin: auto;
+	display: flex;
+	align-items: flex-start;
+}
+
+main{
+	margin-right: 2em;
+}
+.image{
+	margin-top: 3em;
+}
+

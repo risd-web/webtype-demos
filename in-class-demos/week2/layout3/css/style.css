@@ -1,0 +1,18 @@
+.image{
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 3em;
+}
+article{
+	width: 80%;
+	margin: auto;
+	position: relative;
+}
+
+main{
+	margin-left: 500px;
+}
+p{
+	margin-bottom: 1em;
+}
