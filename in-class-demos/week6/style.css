@@ -1,0 +1,62 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+
+@font-face{
+	font-family: "Modular";
+	src: url('TestModular-VariableVF.woff2') format('woff2');
+}
+
+body{
+	font-size: 50px;
+	font-family: Modular, sans;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 1.5;
+	font-variation-settings: 'wdth' 100;
+}
+
+h1,h2,h3,h4,h5{
+	font-weight: normal;
+}
+h1{
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+	font-size: 100px;
+	line-height: 1.1;
+	/*transition: font-variation-settings 400ms;*/
+	/*animation: width-animation 1s infinite alternate;*/
+}
+
+h2{
+	font-family: Arial, sans-serif;
+	margin-bottom: 1em;
+}
+/*h1:hover{
+	font-variation-settings: 'wdth' 150;
+}*/
+
+@keyframes width-animation {
+	from{
+		font-variation-settings: 'wdth' 100;
+	}
+	to{
+		font-variation-settings: 'wdth' 150;
+	}
+} 
+
+h2{
+	font-size:  1em;
+}
+
+p, ul{
+	font-size: 50px;
+	margin-bottom: 1em;
+}
+
+article{
+	max-width: 1200px;
+	width: 80%;
+	margin: auto;
+}
