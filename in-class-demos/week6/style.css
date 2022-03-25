@@ -15,6 +15,7 @@ body{
 	font-style: normal;
 	line-height: 1.5;
 	font-variation-settings: 'wdth' 100;
+	transition: all 300ms linear;
 }
 
 h1,h2,h3,h4,h5{
@@ -59,4 +60,15 @@ article{
 	max-width: 1200px;
 	width: 80%;
 	margin: auto;
+}
+
+
+.darkmode{
+	background: black;
+	color: white;
+	font-variation-settings: 'wdth' 150;
+}
+
+.darkmode h1{
+	color: yellow;
 }
