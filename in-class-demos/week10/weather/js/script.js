@@ -1,14 +1,11 @@
 
 $(document).ready(function() {
-
-    let html = "";
-
     /* 
     * Weather data from Open Weather API
     */
 
     $.getJSON('http://api.openweathermap.org/data/2.5/weather?q=Providence&appid=a0be2ca7d3101a5b3e8a3bbf580143f6&units=imperial', function(data) {
-      console.log(data);
+        console.log(data);
         let currentTemp = data["main"]["temp"];
         let feelsTemp = data["main"]["feels_like"];
 
