@@ -4,7 +4,7 @@ let factList;
 function getFact( ){
   $.getJSON("https://cat-fact.herokuapp.com/facts/")
     .done(function( data ) {
-        // console.log(data);
+        console.log(data);
         factList = data; // store data
         displayFact(0);
       });
@@ -12,7 +12,7 @@ function getFact( ){
 
 function displayFact(factIndex){
   let fact = factList[factIndex];
-  let text = fact["text"];
+  let text = fact.text;
   $('#fact').html(text);
 }
 
