@@ -27,3 +27,10 @@ function getRatio(position, section_height){
 	console.log(ratio);
 	return ratio;
 }
+
+function monthDiff(dateFrom, dateTo) {
+ return dateTo.getMonth() - dateFrom.getMonth() + 
+   (12 * (dateTo.getFullYear() - dateFrom.getFullYear()))
+}
+// console.log( monthDiff(new Date(2001, 01), new Date()), 'months');
+
