@@ -1,0 +1,30 @@
+/**{
+	border: 1px solid;
+}*/
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	height: 300vh;
+}
+
+.box{
+	width:  100vw;
+	height: 100vh;
+	background: red;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.box:nth-child(2){
+	background: blue;
+	width: 90%;
+	height: 90%;
+}
+.box:nth-child(3){
+	background: yellow;
+	width: 80%;
+	height: 80%;
+}
