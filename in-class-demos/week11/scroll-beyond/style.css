@@ -1,0 +1,16 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.scroll-wrapper{
+	width:  100vw;
+	height: 100vh;
+	overflow: scroll;
+}
+
+main{
+	border: 20px solid red;
+	width: 3000px;
+	height: 3000px;
+}

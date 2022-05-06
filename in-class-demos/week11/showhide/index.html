@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Recipe Demo</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <script src="../jquery.min.js"></script>
+        <script src="script.js"></script>
+        <style type="text/css">
+            #panel{
+                width: 500px;
+                height: 500px;
+                background: red;
+                display: none;
+            }
+            #panel.show{
+                display: block;
+            }
+            .active{
+                color:  red;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1>Recipes</h1>
+            
+            <div id="recipe-list">
+                <div class="item" id="arugula"> Arugula Dish </div>
+                <div class="item" id="rice"> Rice Dish </div>
+                <div class="item" id="gingerchicken"> Ginger Chicken Dish </div>
+                <div class="item" id="miso"> Miso Dish </div>
+            </div>
+
+            <section id="panel">
+                <h3>Ingredient List:</h3>
+                <div id="ingredients"></div>
+            </section>
+
+        </main>
+    </body> 
+</html>

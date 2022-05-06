@@ -1,0 +1,30 @@
+[
+  {
+    "key": "arugula",
+    "recipe": "Arugula Salad",
+    "ingredients": "arugula, sesame seeds, lemon juice, olive oil",
+    "prep": 15,
+    "cook": 0
+  },
+  {
+    "key": "test",
+    "recipe": "Rice",
+    "ingredients": "rice, water",
+    "prep": 5,
+    "cook": 40
+  },
+  {
+    "key": "test",
+    "recipe": "Ginger Chicken",
+    "ingredients": "ginger, garlic, chicken thighs, honey, mirin, sake, soysauce, salt, pepper",
+    "prep": 10,
+    "cook": 20
+  },
+  {
+    "key": "test",
+    "recipe": "Miso Soup",
+    "ingredients": "dashi, tofu, green onions, seaweed, miso",
+    "prep": 10,
+    "cook": 10
+  }
+]

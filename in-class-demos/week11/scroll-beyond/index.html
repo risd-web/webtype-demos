@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Beyond Viewpoort</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="../jquery.min.js"></script>
+</head>
+<body>
+  <section class="scroll-wrapper">
+    <main class="container"></main>
+  </section>
+
+  <script>
+    $(document).ready(function(){
+
+      $('.scroll-wrapper').scrollLeft( 1500 );
+      $('.scroll-wrapper').scrollTop( 1500 );
+
+      // not needed for functionality — but for refereence, 
+      // you can output scroll positions
+      $('.scroll-wrapper').scroll(function(){
+        let x = $(this).scrollLeft();
+        let y = $(this).scrollTop();
+        console.log(x, y);
+      });
+      
+    });
+  </script>
+</html>
